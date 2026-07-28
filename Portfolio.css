@@ -167,7 +167,7 @@ background-color: rgba(255,255,255,0.2);
     backdrop-filter: blur(30px);
     width: 400px;
     border-radius: 30px;
-    height: 300px;
+    height: 200px;
     padding: 20px;
 }
 
@@ -323,7 +323,7 @@ button{
 }
 
 
-@media  (max-width: 990px){
+@media  (max-width: 720px){
     header{
         background: rgba(255,255,255,0.2);
         backdrop-filter: blur(20px);
@@ -360,6 +360,9 @@ button{
     button{
         margin-left: 180px;
     }
+
+    #competence .card{
+    height:300px;
 
 }
 
