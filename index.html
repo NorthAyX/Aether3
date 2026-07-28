@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="N">
+            <div class="P">
+                <a href="#boss" class="NN">Aether</a>
+            </div>
+            <div class="menu">
+                <ul class="Lmenu">
+                    <li><a href="#boss">Acceuil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#competence">Compétence</a></li>
+                    <li><a href="#formulaire">Contact</a></li>
+                </ul>
+
+            </div>
+                    <div class="burger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+                    <div class="burger-menu">
+                <ul class="links-burger">
+                    <li><a href="#boss">Acceuil</a></li>
+                    <li><a href="#presentation">Présentation</a></li>
+                    <li><a href="#competence">compétence</a></li>
+                    <li><a href="#formulaire">Contact</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="boss">
+        <div class="gauche">
+            
+        </div>
+
+        <div class="droite">
+            <p class="m">My <br>Portfolio</p>
+            <p class="petit">Développeur web passionné, je conçois des sites modernes, rapides et intuitifs.<br>Chaque projet est pensé pour offrir une expérience utilisateur optimale tout en<br> répondant aux besoins de mes clients. Découvrez mes réalisations et les technologies<br> que j'utilise au quotidien</p>
+        </div>
+    </div>
+    <div id="presentation">
+        <h2>Présentation</h2>
+        <p class="pr">Bienvenue sur mon portfolio ! Je suis un développeur web passionné par la création d'interfaces modernes,<br> performantes et intuitives. J'aime transformer des idées en projets concrets en combinant créativité,<br> innovation et bonnes pratiques de développement. À travers ce portfolio, je vous invite à découvrir mes réalisations,<br> mes compétences et mon parcours. Chaque projet reflète mon engagement à concevoir des solutions de qualité,<br> adaptées aux besoins des utilisateurs et aux défis du numérique</p>
+    </div>
+
+    <div id="competence">
+        <h2>Compétence</h2>
+        <div class="main">
+         <div class="card">
+            <h3>HTML5</h3>
+            <p>Création de pages web sémantiques, structurées et optimisées pour l'accessibilité, le référencement (SEO) et les bonnes pratiques du développement web.</p>
+         </div>
+         <div class="card">
+            <h3>CSS3</h3>
+            <p>Conception d'interfaces modernes, responsives et interactives avec Flexbox, Grid, animations, transitions et adaptation à tous les écrans.</p>
+         </div>
+         <div class="card">
+            <h3>Compétence personnelle</h3>
+            <p>Curieux, autonome et motivé, je combine créativité, esprit d'équipe, sens de l'organisation et capacité d'adaptation pour relever les défis et concevoir des solutions efficaces tout en respectant les délais.</p>
+         </div>
+    </div>
+        </div>
+
+        <div id="formulaire">
+                <section class="formulaire">
+                    <h2>Me contacter</h2>
+    <fieldset>
+        <form action="mailto:andrixakpo@gmail.com" method="post" enctype="text/plain">
+        <input type="text" required placeholder="Entrez votre nom"><br><br>
+        <input type="text" required placeholder="Entre votre prénom"><br><br>
+        <input type="email" required placeholder="Entrez votre addresse mail"><br><br>
+        <textarea name="" id="" placeholder="Entrez votre message"></textarea>
+    </fieldset>
+    <button type="submit">Envoyer</button>
+    </form>
+    </section>
+
+        </div>
+
+
+
+
+    
+    
+
+<footer>
+    © 2026 Tous droits réservés | Conçu par <strong>Aether</strong>
+  <div class="s">
+    <a href="https://facebook.com" target="_blank">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://youtube.com" target="_blank">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://discord.gg" target="_blank">
+      <i class="fa-brands fa-discord"></i>
+    </a>
+  </div>
+    </footer>
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<script>
+    const burgerMenuButton = document.querySelector('.burger')
+        const burgerMenuButtonIcon = document.querySelector('.burger i')
+        const burgerMenu = document.querySelector('.burger-menu')
+
+        burgerMenuButton.onclick = function(){
+            burgerMenu.classList.toggle('open')
+            const isOpen = burgerMenu.classList.contains('open')
+            burgerMenuButtonIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        }
+</script>
+
+</body>
+</html>

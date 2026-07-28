@@ -1,0 +1,377 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #242423;
+}
+
+.N{
+    display: flex;
+    align-items: center;
+
+}
+
+.Lmenu{
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+   margin-left: 220px;
+}
+
+.Lmenu li{
+    padding: 10px;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: bold;
+    color: black;
+    transition: 0.3s;
+}
+
+a:hover{
+    color: #563844;
+}
+
+.Lmenu li:hover{
+    padding: 13px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    border: 2px solid #563844;
+    color: #563844;
+}
+
+.NN{
+    font-size: 30px;
+    margin-left: 30px;
+    color: #242423;
+    transition: 0.4s;
+}
+
+.NN:hover{
+    color: white;
+}
+
+header{
+background-color: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.2);
+    width: 100%;
+    height: 75px;
+    backdrop-filter: blur(30px);
+        position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#boss{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#boss .gauche{
+    height: 100%;
+    
+    width: 40%;
+    background: url(photo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#boss .droite{
+    height: 100%;
+
+    width: 60%;
+}
+
+#boss .droite .m{
+    text-align: left;
+    font-size: 110px;
+    margin-left: 100px;
+    margin-top: 40px;
+    font-family: poppins;
+    font-weight: 700;
+    color: white;
+    line-height: 130px;
+}
+
+#boss .droite .petit{
+    margin-left: 105px;
+    margin-top: 20px;
+    color: white;
+    font-family: poppins;
+    font-size: 10px;
+}
+
+.foot{
+    text-align: center;
+}
+
+#presentation{
+    width: 80%;
+    margin: auto;
+    margin-top: 180px;
+    padding: 40px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+}
+
+#presentation .pr{
+    text-align: center;
+}
+
+#presentation h2{
+    text-align: center;
+}
+
+#competence{
+    margin-top: 180px;
+    padding: 60px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+}
+
+#competence h2{
+    text-align: center;
+}
+
+#competence .main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+#competence .card{
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(30px);
+    width: 400px;
+    border-radius: 30px;
+    height: 200px;
+    padding: 20px;
+}
+
+#competence .card h3{
+    text-align: center;
+}
+
+#competence .card p{
+    text-align: center;
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  color: white;
+  margin-top: 40px;
+}
+
+.s {
+  margin-top: 15px;
+}
+
+.s a {
+  color: white;
+  font-size: 28px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.s a:hover {
+  color: #374A8D;
+
+}
+
+.burger i {
+    color: white;
+}
+
+button:hover{
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.burger{
+    margin-left: 230px;
+    display: none;
+}
+
+.burger-menu.open{
+    height: 250px;
+}
+
+.burger-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+
+.burger-menu{
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    overflow: hidden;
+    border-radius: 10px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+fieldset{
+    height: 400px;
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 40px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid transparent;
+    padding-left: 10px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+input::placeholder{
+    color: black;
+}
+
+textarea{
+    width: 402px;
+    height: 100px;
+    outline: none;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(20px);
+   padding-left: 10px;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.2);
+
+}
+
+textarea::placeholder{
+
+    color: black;
+    font-family: poppins;
+}
+
+button{
+    margin-left: 550px;
+    height: 60px;
+    width: 140px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: poppins;
+    font-weight: bold;
+    color: #242423;
+    font-size: x-large;
+    padding: 10px;
+    border: 3px solid ;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#formulaire .formulaire h2{
+     text-align: center;
+     margin-bottom: 40px;
+}
+
+#formulaire{
+    margin-top: 180px;
+}
+
+
+@media  (max-width: 990px){
+    header{
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(20px);
+    }
+    .N .Lmenu{
+        display: none;
+    }
+    .N .burger{
+        display: block;
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+    .burger-menu{
+        display: block;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        
+    } 
+    .burger-menu .links-burger{
+        margin-left: -42px;
+    }
+    #boss .droite .m{
+        margin-left: 40px;
+        font-size: 40px;
+        line-height: 60px;
+        margin-top: 80px;
+    }
+    #boss .droite .petit{
+        margin-left: 40px;
+    }
+    button{
+        margin-left: 180px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
