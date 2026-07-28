@@ -343,7 +343,7 @@ button{
         align-items: center;
         justify-content: center;
         width: 160px;
-        margin-left: 0px;
+        margin-left: -80px;
         
     } 
     .burger-menu .links-burger{
@@ -359,7 +359,7 @@ button{
         margin-left: 40px;
     }
     button{
-        margin-left: 180px;
+        margin-left: 150px;
     }
 
     #competence .card{
@@ -367,6 +367,12 @@ button{
     }
     header{
         widht: 100%;
+    }
+    input{
+        width:100px;
+    }
+    textarea{
+        widht:202px
     }
         
 
