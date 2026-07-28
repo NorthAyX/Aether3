@@ -323,7 +323,7 @@ button{
 }
 
 
-@media  (max-width: 720px){
+@media  (max-width: 990px){
     header{
         background: rgba(255,255,255,0.2);
         backdrop-filter: blur(20px);
@@ -362,7 +362,7 @@ button{
     }
 
     #competence .card{
-    height:300px;
+    height:380px;
 
 }
 
