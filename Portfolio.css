@@ -363,6 +363,11 @@ button{
 
     #competence .card{
     height:380px;
+    }
+    header{
+        widht: 100%;
+    }
+        
 
 }
 
